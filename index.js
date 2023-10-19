@@ -16,10 +16,10 @@ mongoose.connect('mongodb://127.0.0.1:27017/movie', {
   useUnifiedTopology: true,
 })
   .then(() => {
-    console.log('Connexion à MongoDB établie');
+    console.log('connexion à MongoDB est établie');
   })
   .catch((error) => {
-    console.error('Erreur lors de la connexion à MongoDB :', error);
+    console.error('Erreur fatale ! impossible de se connecter a la base de données  :', error);
   });
 
 // API pour ajouter un film
